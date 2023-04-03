@@ -42,4 +42,4 @@ jobs:
         run: docker run -p 80:80 -d voylovbogdan/devops-lab3
 
       - name: Test image
-        run: curl --silent --show-error --fail "https://localhost:80"
+        run: curl --silent --show-error --fail "http://localhost:80"
