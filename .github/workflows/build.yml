@@ -32,6 +32,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
+          push: true
           tags: voylovbogdan/devops-lab3:latest
 
       - name: Pull image
