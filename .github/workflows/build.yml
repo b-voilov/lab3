@@ -33,3 +33,12 @@ jobs:
         with:
           context: .
           tags: voylovbogdan/devops-lab3:latest
+
+      - name: Pull image
+        run: docker pull voylovbogdan/devops-lab3:latest
+
+      - name: Run image
+        run: docker run voylovbogdan/devops-lab3 -p 80:80
+
+      - name: Test image
+        run: curl --silent --show-error --fail "https://localhost:80"
